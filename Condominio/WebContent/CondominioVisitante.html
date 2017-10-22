@@ -18,44 +18,79 @@
   <h1>Condomínio Nascer do Sol</h1>
   <p>Bem vindo!</p> 
 </div>
-  <title>Login do Sistema</title>
+  <title>Cadastro do Visitante</title>
 </head>
 <body>
-<h1>Informações Necessárias </h1>
+<h1>Cadastro de Visitante </h1>
+
 <hr>
 <form action="/MyLogin/AutenticarUsuarioServlet" method="post">
 	<table>
 		<tr>
 			<td>Email:</td>
-			<td><input required type="Email" id="email" name="email" value=""></td>
-                     
+			<td><input type="text" id="email" name="email" value=""></td>
 		</tr>
 		<tr>
 			<td>Senha:</td>
-			<td><input required type="password" id="senha" name="senha" value=""></td>
+			<td><input type="password" id="senha" name="senha" value=""></td>
 		</tr>
 		<tr>
         <td>Apartamento:</td>
-			<td><input type="text" id="apartamento" name="apartamento" value=""></td>
+			<td><input type="password" id="apartamento" name="apartamento" value=""></td>
 		</tr>
 		<tr>
         <td>Número:</td>
-			<td><input type="number" id="número" name="número" value=""></td>
+			<td><input type="password" id="número" name="número" value=""></td>
 		</tr>
         <tr>
         <td>Telefone para contato:</td>
-			<td><input type="number" id="telefone" name="telefone" value=""></td>
+			<td><input type="password" id="telefone" name="telefone" value=""></td>
 		</tr>
-        
+         <tr>
+        <td>Possui Carro?</td> <label class="radio-inline">
+      <input type="radio" name="optradio">Sim
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Não
+    </label>
+    
+    <tr>
+        <td>Placa</td>
+			<td><input type="password" id="placa" name="placa" value=""></td>
+		</tr> 
+         <tr>
+        <td>Marca</td>
+			<td><input type="password" id="marca" name="marca" value=""></td>
+		</tr> 
+        <tr>
+        <td>Modelo</td>
+			<td><input type="password" id="modelo" name="modelo" value=""></td>
+		</tr> 
 		<tr>
         
-			<td><input type="submit" value="Entrar"></td>
+			
             
-			<td><input type="reset" value="Limpar"></td>
+                        
+          
+
+		<td><button onclick="Cancelar()">Cancelar</button></td>
+
+		<script>
+		function Cancelar() {
+    		confirm("Cancelar Cadastro?"); 
+ }
+ 			</script>
+                                  
+           	
+        	<td><button onclick="Cadastrar()">Cadastrar</button></td>
+         	<script>	
+         	function Cadastrar() {
+		alert("Cadastro Realizado com Sucesso!");
+}
+
+			</script>
+            </tr>
             
-            <td><input type="reset" value="Cadastrar"></td>
-		</tr>
-        
 	</table>	
 </form>
 </body>
@@ -75,3 +110,4 @@
 
 </body>
 </html>
+html>
